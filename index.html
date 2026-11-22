@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualoka | Biro Desain Kemasan dan Identitas Visual Produk Lokal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header-section" data-role="CEO">
+    <a class="brand" href="#hero-section">Visualoka</a>
+    <nav>
+      <a href="#hero-section">Beranda</a>
+      <a href="#catalog-section">Katalog</a>
+      <a href="#calc-section">Kalkulator</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero-section" data-role="PM">
+      <div class="hero-text">
+        <h1>Produk lokal Anda layak tampil di rak yang sama dengan merek besar.</h1>
+        <p>Visualoka adalah biro desain kemasan dan identitas visual untuk UMKM dan produk lokal Indonesia. Kami mengubah produk yang baik menjadi merek yang mudah dikenali, dipercaya, dan dipilih pembeli.</p>
+        <ul class="benefits">
+          <li><strong>Berkarakter lokal.</strong> Visual terinspirasi bahan, warna, dan cerita daerah asal produk Anda.</li>
+          <li><strong>Siap cetak.</strong> File akhir sesuai ukuran dan standar percetakan.</li>
+          <li><strong>Harga ramah UMKM.</strong> Tarif jelas per paket, tanpa biaya tersembunyi.</li>
+        </ul>
+        <a class="btn-cta" href="#calc-section">Hitung biaya desain Anda</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="swatch s1"></div>
+        <div class="swatch s2"></div>
+        <div class="swatch s3"></div>
+        <div class="pack">Visualoka<span>Kopi Gayo<br>250 g</span></div>
+      </div>
+    </section>
+
+    <section id="catalog-section" data-role="PM">
+      <h2>Katalog Paket Layanan</h2>
+      <p class="sub">Pilih paket sesuai tahap perkembangan usaha Anda. Harga paket dihitung per variasi kemasan.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Paket Desain Logo</h3>
+          <p>Untuk usaha yang baru mulai dan belum punya identitas.</p>
+          <ul>
+            <li>3 konsep logo awal</li>
+            <li>2 kali revisi</li>
+            <li>File PNG, SVG, dan PDF</li>
+          </ul>
+          <p class="price">Rp300.000</p>
+          <p class="promo">Kode promo: <b>VISUALOKA</b> (diskon 10%)</p>
+        </article>
+        <article class="card featured">
+          <h3>Paket Kemasan Produk</h3>
+          <p>Untuk produk yang sudah laku dan siap tampil lebih meyakinkan.</p>
+          <ul>
+            <li>Desain label atau kemasan penuh</li>
+            <li>Mockup 3D produk</li>
+            <li>File siap cetak</li>
+          </ul>
+          <p class="price">Rp500.000</p>
+          <p class="promo">Kode promo: <b>VISUALOKA</b> (diskon 10%)</p>
+        </article>
+        <article class="card">
+          <h3>Paket Pembaruan Merek Lengkap</h3>
+          <p>Untuk merek lama yang ingin tampil baru dan konsisten.</p>
+          <ul>
+            <li>Logo, warna, dan tipografi baru</li>
+            <li>Panduan identitas merek</li>
+            <li>Template media sosial</li>
+          </ul>
+          <p class="price">Rp900.000</p>
+          <p class="promo">Kode promo: <b>VISUALOKA</b> (diskon 10%)</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="calc-section" data-role="SE">
+      <h2>Kalkulator Simulasi Biaya</h2>
+      <p class="sub">Diskon 10% berlaku jika Anda memakai kode VISUALOKA atau memesan minimal 3 variasi kemasan.</p>
+      <div class="calc-box">
+        <label for="paket">Pilih paket</label>
+        <select id="paket">
+          <option value="300000">Paket Desain Logo (Rp300.000)</option>
+          <option value="500000">Paket Kemasan Produk (Rp500.000)</option>
+          <option value="900000">Paket Pembaruan Merek Lengkap (Rp900.000)</option>
+        </select>
+
+        <label for="jumlah">Jumlah variasi kemasan</label>
+        <input type="number" id="jumlah" min="1" value="1">
+
+        <label for="promo">Kode promo (opsional)</label>
+        <input type="text" id="promo" placeholder="Ketik disini">
+
+        <button type="button" id="btn-hitung" onclick="hitungTotal()">Hitung total</button>
+
+        <div id="hasil" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer-section" data-role="CEO">
+    <p>&copy; 2026 Visualoka. Seluruh hak cipta dilindungi.</p>
+    <p>WebDev A | Kelompok 7</p>
+    <p>PT.VISUALOKA Tbk Jl. RawaMangun Muka Raya No.11, RT.11/RW.14, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
